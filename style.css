@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{ 
+    color: white ;
+    background-color: rgb(158, 154, 154);
+    font-family: 'Poppins', sans-serif;
+        
+
+}
+header{
+    width: 100%;
+    position: absolute;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4vw;
+    z-index: 99;
+}
+ button{
+    font-size: 16px;
+    padding: 16px 32px;
+    background-color: rgba(255, 255, 255, 0.959);
+    border: 2px solid rgba(255, 255, 255, 0.959);
+    border-radius: 5px;
+    font-family: poppins, sans-serif;
+
+ }
+    ul{
+         display: flex;
+         gap: 30px;
+         list-style-type: none;
+
+    
+    } 
+    .icones{
+        
+        width: 389px;
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+    
+
+    }   
+   .slider{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+      
+        .slide{
+           width: 100%;
+           height: 100vh;
+           background: linear-gradient(100deg, #2AC4FF 2.57%, #0D88BB 95.91%);
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           gap: 4vw;
+           padding: 4vw 4vw 4vw 0 ; 
+           position:absolute;
+           transition: opacity .1s 1s, clip-path .1s 1s;
+           clip-path: circle(0% at 89% 50%);
+           opacity: 0;
+           z-index: 1;
+
+           .imgCirculo{
+           transform: rotate(-50deg);
+           transition: transform .5s;
+           }
+          
+
+          
+           .imgCirculo{
+            margin-left: -20%;
+            width: 40vw ;
+           }
+        
+            .conteudo{
+                h2{
+                    font-size: 4.5vw;
+                }
+
+                p{
+                    width: 80%;
+                    margin-bottom: clamp(24px, 2vw, 40px);
+                    font-size: clamp(14px, 1vw, 20 px);
+
+                }
+
+                h2,
+                p,
+                button{
+                    opacity: 0;
+                transition: all .5s .1s;
+                   
+                }
+                button{
+                    transform: translateY(20px);
+                    
+                }  
+            }
+
+             .latas{
+
+            display: flex;
+            gap: 20px;
+            cursor: pointer;
+
+            img {
+                width: 14vw;
+            }
+
+            img:nth-child(2){
+                scale: .8;
+            }
+        }
+
+         }
+
+            .slide.ativo{
+                opacity: 1;
+                clip-path: circle(140vw at 89% 50%);
+                transition:
+                 opacity 0.1s, 
+                 clip-path 1s ;
+                z-index: 2;
+
+                h2,p,button{
+                    opacity: 1;
+                }
+
+                .imgCirculo{
+                    transform: rotate(50deg);
+                    transition: transform 1s ;
+
+                }
+
+                 h2{
+                    transition: opacity 1s 0.5s;
+                }
+
+                P{
+                    transition: opacity 1s 0.8s;}
+
+                button{
+                   transform: translateY(0px);
+                    transition: opacity 1s 1s, transform .5s 1s;
+
+               
+                }
+
+            }
+
+        .slide:nth-child(2){
+            background: linear-gradient(100deg, #FF849D 2.57%, #C5566A 95.91%);
+        }
+
+         .slide:nth-child(3){
+            background: linear-gradient(100deg, #FF8917 2.57%, #D06000 95.91%);
+        }
+         
+
+         .slide:nth-child(4){
+            background: linear-gradient(100deg, #008E5E 2.57%, #005235 95.91%);
+            }
+        }
+
+       
+    
+   
+        
+    
+
+        
+           
+
+   
+     
+
+    
