@@ -1,116 +1,362 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0
-,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+ <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Font imports -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+      <!-- Stylesheets -->
+      <link rel="stylesheet" href="style.css">
+
+      <title>Batata Pringles</title>
+
+      <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <title>Batata Pringles</title>
 </head>
-<body>
-    <header>  
-       <nav>
-        <ul>
-       <li>Início</li>
-       <li>promoções</li>
-       <li> Nossos Produtos</li>
-       <li>Contato</li>
-        </ul>
-    </nav>
-      <img src="img/logo.webp.webp" alt="">
-      <div class="icones">
-      <img src="img/lupa.svg" alt="icone de lupa">       
-      <img src="img/perfil.svg" alt="icone de perfil">
-    </div>       
-    </header>
 
-    <main>
-        <section class="slider">
-            <div class="slide ativo 1">
-                <img class= "imgCirculo" src="img/ciculo-1.webp.webp" alt="batata Pringles sabor Original">
+  </head>
 
-                <div class="conteudo">
-                    <h2>Salt e Vinegar</h2>
-                    <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is tha/ </p>
-                    <button> VER NA LOJA</button>
+  <body>
+      <!-- O Header é o cabeçalho do site, onde ficam o menu de navegação e a logo -->
+      <header>
+          <nav>
+              <ul>
+                  <li>Início</li> <!-- Atalho para o topo da página -->
+                  <li>Promoções</li> <!-- Seção de ofertas -->
+                  <li>Nossos Sabores</li> <!-- Lista de produtos -->
+                  <li>Fale Conosco</li> <!-- Informações de contato -->
+              </ul>
+          </nav>
+
+          <!-- Logo central da marca -->
+          <img src="img/logo.webp.webp" alt="">
+
+          <!-- Área de ícones utilitários (busca e login) -->
+          <div class="icones">
+              <img src="img/lupa.svg" alt="icone de lupa">
+              <img src="img/perfil.svg" alt="icone de perfil">
+          </div>
+      </header>
+
+      <!-- O Main define o conteúdo principal da página -->
+      <main>
+          <!-- Section slider é o container que segura todos os nossos slides -->
+          <section class="slider">
+
+              <!-- Slide 1: Sal e Vinagre -->
+              <div class="slide ativo 1">
+                  <!-- Imagens de composição visual (fundo e círculo dinâmico) -->
+                  <img class="logoFundo" src="img/logo fundo.svg" alt="logo pringles">
+                  <img class="imgCirculo" src="img/ciculo-1.webp.webp" alt="Efeito visual circular">
+
+                  <!-- Bloco de texto descritivo do produto -->
+                  <div class="conteudo">
+                      <h2>Sal e Vinagre</h2>
+                      <p>A combinação clássica que desperta os sentidos: a acidez vibrante do vinagre com o toque perfeito de sal marinho.</p>
+                      <button>COMPRAR AGORA</button>
+                  </div>
+
+                  <!-- Miniaturas das latas (usadas para a interação de clique no JavaScript) -->
+                  <div class="latas">
+                      <img src="img/batata-1.webp.webp" alt="pringle sabor original">
+                      <img src="img/batata-2.webp.webp" alt="pringle sabor original">
+                  </div>
+              </div>
+
+              <!-- Slide 2: Presunto e Queijo -->
+              <div class="slide 2">
+                  <img class="logoFundo" src="img/logo fundo.svg" alt="logo pringles">
+                  <img class="imgCirculo" src="img/ciculo-2.webp.webp" alt="Efeito visual circular">
+
+                  <div class="conteudo">
+                      <h2>Presunto e Queijo</h2>
+                      <p>O sabor defumado do presunto curado encontra a cremosidade do queijo derretido em uma mordida irresistível.</p>
+                      <button>COMPRAR AGORA</button>
+                  </div>
+
+                  <div class="latas">
+                      <img src="img/batata-2.webp.webp" alt="pringle sabor original">
+                      <img src="img/batata-3.webp.webp" alt="pringle sabor original">
+                  </div>
+              </div>
+
+              <!-- Slide 3: Páprica -->
+              <div class="slide 3">
+                  <img class="logoFundo" src="img/logo fundo.svg" alt="logo pringles">
+                  <img class="imgCirculo" src="img/ciculo-3.webp.webp" alt="Efeito visual circular">
+
+                  <div class="conteudo">
+                      <h2>Páprica</h2>
+                      <p>Para quem busca intensidade: um toque levemente picante e amadeirado que transforma cada batata em uma experiência única.</p>
+                      <button>COMPRAR AGORA</button>
+                  </div>
+
+                  <div class="latas">
+                      <img src="img/batata-3.webp.webp" alt="pringle sabor original">
+                      <img src="img/batata-4.webp.webp" alt="pringle sabor original">
+                  </div>
+              </div>
+
+              <!-- Slide 4: Queijo e Cebola -->
+              <div class="slide 4">
+                  <img class="logoFundo" src="img/logo fundo.svg" alt="logo pringles">
+                  <img class="imgCirculo" src="img/ciculo-4.webp.webp" alt="Efeito visual circular">
+
+                  <div class="conteudo">
+                      <h2>Queijo e Cebola</h2>
+                      <p>A união perfeita da doçura da cebola caramelizada com o sabor encorpado do queijo cheddar premium.</p>
+                      <button>COMPRAR AGORA</button>
+                  </div>
+
+                  <div class="latas">
+                      <img src="img/batata-4.webp.webp" alt="pringle sabor original">
+                      <img src="img/batata-1.webp.webp" alt="pringle sabor original">
+                  </div>
+
+              </div>
+
+              <div class="navegacao-custom">
+    <div class="paginacao">
+        <div id="Rectangle130" class="item-paginacao retangulo-ativo"></div>
+        <div class="item-paginacao ponto-inativo"></div>
+        <div class="item-paginacao ponto-inativo"></div>
+        <div class="item-paginacao ponto-inativo"></div>
+    </div>
+
+    <div class="setas">
+        <img src="img/arrow-voltar.svg" id="arrow-voltar" alt="Voltar">
+        <img src="img/arrow-passar.svg" id="arrow-passar" alt="Passar">
+    </div>
+</div>
+
+    </section>
+           <!-- Fim do Section slider -->
 
 
-                </div>
 
-                <div class="latas">
-                    <img src="img/batata-1.webp.webp" alt="pringle sabor original">
-                    <img src="img/batata-2.webp.webp" alt="pringle sabor original">
-                </div>
+     <section class="letrasMovimento1 ">
+<div class="letraMovimento">
+    <svg viewBox="30 0 1400 300" preserveAspectRatio="none">
+        <path id="caminhoS"
+         d="M-35,220, Q200,0 600, 100 , T1700,35"
+         fill="transparent"
+         stroke="#ed1c24" 
+         stroke-width="138" 
+         stroke-linecap="round" />
+        
+        <text class="texto-estilizado" 
+        dy="45"> <textPath href="#caminhoS"
+             startOffset="0%" id="textoPath">
 
-            </div>
+        </textPath>
+            <textPath href="#caminhoS" startOffset="0%" id="textoPath">
+                CEBOLAS E ERVAS . PRESUNTO E QUEIJO . PÁPRICA . SAL E VINAGRE . CEBOLAS E ERVAS
+            </textPath>
+        </text>
+    </svg>
+</div>
 
-            <div class="slide 
-            2">
-                <img class="imgCirculo" src="img/ciculo-2.webp.webp" alt="batata Pringles sabor Original">
-
-                <div class="conteudo">
-                    <h2>Ham & Cheese</h2>
-                    <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that</p>
-                    <button> VER NA LOJA</button>
-
-
-                </div>
-
-                <div class="latas">
-                    <img src="img/batata-2.webp.webp" alt="pringle sabor original">
-                    <img src="img/batata-3.webp.webp" alt="pringle sabor original">
-                </div>
-
-            </div>
-
-            <div class="slide  3">
-                <img class = "imgCirculo" src="img/ciculo-3.webp.webp" alt="batata Pringles sabor Original">
-
-                <div class="conteudo">
-                    <h2>Paprika</h2>
-                    <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that</p>
-                    <button> VER NA LOJA</button>
+</section>
+<!-- Fim do Section letras em movimento -->
 
 
-                </div>
-
-                <div class="latas">
-                    <img src="img/batata-3.webp.webp" alt="pringle sabor original">
-                    <img src="img/batata-4.webp.webp" alt="pringle sabor original">
-                </div>
-
-            </div>
-
-            <div class="slide 4">
-                <img class="imgCirculo" src="img/ciculo-4.webp.webp" alt="batata Pringles sabor Original">
-
-                <div class="conteudo">
-                    <h2>Cheese & Onion</h2>
-                    <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that </p>
-                    <button> VER NA LOJA</button>
 
 
-                </div>
 
-                <div class="latas">
-                    <img src="img/batata-4.webp.webp" alt="pringle sabor original">
-                    <img src="img/batata-1.webp.webp" alt="pringle sabor original">
-                </div>
 
-            </div>
 
-        </section>
-    </main>
 
-   
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<section class="container-flutuantes">
     
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/SplitText.min.js"></script>
+    <div class="bloco-flutuante lata-presunto">
+        <div class="info-balao">
+            <div class="circulo-emoji">
+                <img src="img/smile_01.webp" alt="emoji sorriso">
+            </div>
+            <div class="texto-balao">
+                <h3>Defumado</h3>
+                <p>O encontro perfeito do presunto curado com a cremosidade do queijo.</p>
+            </div>
+        </div>
+        <img src="img/batata-2.webp.webp" class="lata-img" alt="Lata Presunto e Queijo">
+    </div>
 
-    <script src="script.js"></script>
-</html>
+    <div class="bloco-flutuante lata-paprica">
+        <div class="info-balao">
+            <div class="circulo-emoji">
+                <img src="img/smile_02.webp" alt="emoji lingua">
+            </div>
+            <div class="texto-balao">
+                <h3>Sabor</h3>
+                <p>Uma lata nova a estrear, o sabor de sempre que te faz salivar por mais.</p>
+            </div>
+        </div>
+        <img src="img/batata-3.webp.webp" class="lata-img" alt="Lata Páprica">
+    </div>
+
+    <div class="bloco-flutuante lata-cebola">
+        <div class="info-balao">
+            <div class="circulo-emoji">
+                <img src="img/smile_03.webp" alt="emoji ervas">
+            </div>
+            <div class="texto-balao">
+                <h3>Intenso</h3>
+                <p>A refrescância das ervas finas com o sabor marcante da cebola.</p>
+            </div>
+        </div>
+        <img src="img/batata-4.webp.webp" class="lata-img" alt="Lata Cebola e Ervas">
+    </div>
+
+<svg class="caminho-s" viewBox="0 0 1000 2400" preserveAspectRatio="none">
+   <path id="trilha"
+    d="M -130,10
+       C 30 1200 700 -400 885,450
+       C 1100 1850 50 500 100 1750
+       C 130 2850 1600 150 200 4500"
+    fill="none"
+    stroke="white"
+    stroke-width="135"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    />
+</svg>
+
+</section>
+
+<!-- ============================================
+     FOOTER - NOVO LAYOUT COM FADE IN
+     2 COLUNAS: ESQUERDA (INFO) / DIREITA (CONTATO)
+     ============================================ -->
+
+<section class="footer-portfolio">
+    
+    <!-- COLUNA ESQUERDA - INFORMAÇÕES -->
+    <div class="footer-info-left-section">
+        
+        <!-- HEADER -->
+        <div class="footer-header">
+            <h2 class="footer-nome">João Vitor Gomes</h2>
+            <p class="footer-profissao">Full Stack Developer</p>
+            <p class="footer-descricao">Full Stack Developer | Transformando ideias em código</p>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="footer-skills-section">
+            <h3 class="skills-title">Skills</h3>
+            <div class="skills-grid">
+                <span class="skill-badge">React</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">TypeScript</span>
+                <span class="skill-badge">HTML</span>
+                <span class="skill-badge">CSS</span>
+                <span class="skill-badge">Node.js</span>
+                <span class="skill-badge">MySQL</span>
+                <span class="skill-badge">MongoDB</span>
+                <span class="skill-badge">PostgreSQL</span>
+                <span class="skill-badge">Git/GitHub</span>
+                <span class="skill-badge">Figma</span>
+                <span class="skill-badge">GSAP</span>
+                <span class="skill-badge">API REST</span>
+                <span class="skill-badge">Responsive</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- COLUNA DIREITA - CONTATO -->
+    <div class="footer-contato-section">
+        
+        <h3 class="contato-title">Entre em Contato</h3>
+
+        <div class="contato-list">
+            
+            <!-- EMAIL -->
+            <div class="contato-item">
+                <div class="contato-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contato-info">
+                    <span class="contato-label">Email</span>
+                    <a href="mailto:joaovitorgomezdev@gmail.com" target="_blank">
+                        <span class="contato-value">joaovitorgomezdev@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- GITHUB -->
+            <div class="contato-item">
+                <div class="contato-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <div class="contato-info">
+                    <span class="contato-label">GitHub</span>
+                    <a href="https://github.com/Joaogomezdev" target="_blank">
+                        <span class="contato-value">Joaogomezdev</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- WHATSAPP -->
+            <div class="contato-item">
+                <div class="contato-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="contato-info">
+                    <span class="contato-label">WhatsApp</span>
+                    <a href="https://wa.me/551298893-9408" target="_blank">
+                        <span class="contato-value">(12) 98893-9408</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- LINKEDIN -->
+            <div class="contato-item">
+                <div class="contato-icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="contato-info">
+                    <span class="contato-label">LinkedIn</span>
+                    <a href="https://linkedin.com/in/joaogomezdev" target="_blank">
+                        <span class="contato-value">joaogomezdev</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BOTÃO -->
+        <div class="btn-section">
+            <a href="mailto:joaovitorgomezdev@gmail.com" class="btn-contato">
+                Entre em Contato
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FIM DO FOOTER -->
+
+
+
+
+
+            <!-- ============================================
+  
+
+      </main>
+
+      <!-- Inclusão de bibliotecas externas (GSAP para animações) e o nosso arquivo de lógica (script.js) -->
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/SplitText.min.js"></script>
+<script src="script.js"></script>
+  </body>
+  </html>
